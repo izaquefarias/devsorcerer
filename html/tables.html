@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<body>
+    <header></header>
+    <div>
+        <h1>Tabelas</h1>
+        <h3>E Pra Quê Tabelas?</h3>
+        <p>Com certeza você já deve ter visto ou até mesmo manipulado uam tabela na vida! Minha primeira experiência com tabelas foi quando brincava com minhas irmãs de Salada de Frutas: era um brincadeira em que escolhíamos vários elementos e depois de sortearmos uma letra do alfabeto, tínhamos que escrever o nome de um desses elementos que começasse com uma dessas letras, quem mais pensasse em elementos diferentes dos seus adversários: podiam ser animais, frutas, nome de atores, programas de tv, cores, obtinha mais pontos. Outras pessoas tem seu primeiro encontro às vezes conflituoso com as tabelas através do Microsoft Excel, organizando informações de estoque, por exemplo, e esse é o conceito que precisamos de tabela: A tabela é uma estrutura de dados construída através de linhas e colunas.</p>        
+        <p>E é claro que nas páginas web teremos uma forma particular de criá-las, é um conhecimento básico e indispensável para um programador web, e relativamente fácil até!</p>
+        <h3>Estrutura</h3>
+        <p>
+           Conseguimos contruir tabelas nas páginas html utilizando as tags <strong>&lt;table&gt;&lt;/table&gt;</strong> que conterão a estrutura interna da tabela, as tags <strong>&lt;tr&gt;&lt;/tr&gt;</strong> (<em>tr</em> de "table row" - linha da tabela) irão inserir cada uma das linhas, sendo que as tgs <strong>&lt;th&gt;&lt;/th&gt;</strong>(<em>th</em> de "table head" - cabeçalho da tabela) utilizaremos para criar a primeira linha da tabela, que corresponde geralmente aos títulos das colunas, isso consequente lhes dará um destaque, e por fim, os elementos das linhas serão inseridos pelas tags <strong>&lt;td&gt;&lt;/td&gt;</strong> que envolvem o conteúdo da linha. Veja um exemplo de tabela:
+        </p>
+        <table border="2">
+            <caption>Quadro de Alunos</caption>
+            <tr>
+                <th>Aluno</th>
+                <th>Peso</th>
+                <th>Altura</th>
+                <th>idade</th>
+            </tr>
+            <tr>
+                <td>Carlos</td>
+                <td>89kg</td>
+                <td>1,89m</td>
+                <td>37</td>
+            </tr>
+            <tr>
+                <td>Renato</td>
+                <td>92kg</td>
+                <td>1,72m</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Luciana</td>
+                <td>58kg</td>
+                <td>1,54m</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <td>Paula</td>
+                <td>60kg</td>
+                <td>1,79m</td>
+                <td>35</td>
+            </tr>
+        </table>
+        <p>Observe um esquema relacionando código x resultado que facilitára a compreenssão das relações entre as tags: </p>
+        <figure>
+            <img src="src/tableSchema.jpg" alt="Esquema Básico de Uma Tabela Em html">
+            <figcaption>Fig. 1 - Esquema de Tabela</figcaption>
+        </figure>
+        <p>O resultado exato do código acima:</p>
+        <table border="1">
+            <tr>
+                <th>Coluna 1</th>
+                <th>Coluna 2</th>
+                <th>Coluna 3</th>
+            </tr>
+            <tr>
+                <td>Linha 1 da Coluna 1</td>
+                <td>Linha 1 da Coluna 2</td>
+                <td>Linha 1 da Coluna 3</td>
+            </tr>
+            <tr>
+                <td>Linha 2 da Coluna 1</td>
+                <td>Linha 2 da Coluna 2</td>
+                <td>Linha 2 da Coluna 3</td>
+            </tr>
+            <tr>
+                <td>Linha 3 da Coluna 1</td>
+                <td>Linha 3 da Coluna 2</td>
+                <td>Linha 3 da Coluna 3</td>
+            </tr>
+        </table>
+        <h3>Título e borda</h3>
+        <p>Na tag de abertura da tabela <em>linha 16 da Fig 1.1</em>, há um atributo inserido: <em>border="2"</em>, ele define a borda (espessura da linha da tabela, nesse caso setei para nível 2). Veremos mais adiante sobre atributos, considere nesse momento que eles podem setar configurações de uma tag ou identificá-las. Podemos incluir também um título na tabela através da tag caption <strong>&lt;caption&gt;</strong>Legenda da tabela<strong>&lt;/caption&gt;</strong>, veja ainda na <em>Fig.1.1 - linha 17</em>:</p> 
+        <figure>
+            <img src="src/tableCodeExample.jpg" alt="Exemplo de tabela html">
+            <figcaption><em>Fig. 1.1 - Código de uma tabela html</em></figcaption>
+        </figure> 
+        <p>Resultado do código da Fig 1.1</p>
+        <table border="2">
+            <caption>Quadro de Alunos</caption>
+            <tr>
+                <th>Aluno</th>
+                <th>Peso</th>
+                <th>Altura</th>
+                <th>idade</th>
+            </tr>
+            <tr>
+                <td>Carlos</td>
+                <td>89kg</td>
+                <td>1,89m</td>
+                <td>37</td>
+            </tr>
+            <tr>
+                <td>Renato</td>
+                <td>92kg</td>
+                <td>1,72m</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Luciana</td>
+                <td>58kg</td>
+                <td>1,54m</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <td>Paula</td>
+                <td>60kg</td>
+                <td>1,79m</td>
+                <td>35</td>
+            </tr>
+        </table>
+        <h3>Tags Semâticas</h3> 
+       <p> As tabelas também podem ser escritas utilizando suas tags <em>semânticas</em> própias: </p>
+        <ul>
+            <li>A tag de cabeçalho que vamos incluir os títulos das colunas: <Strong>&lt;thead&gt;&lt;/thead&gt;</Strong>;</li>
+            <li>A tag que conterá o conteúdo da tabela: <strong>&lt;tbody&gt;&lt;/tbody&gt;</strong>;</li>
+            <li>E por fim a tag de rodapé da tabela <strong>&lt;tfoot&gt;&lt;/tfoot&gt;</strong>;</li>
+        </ul>
+        <table border="3">
+            <caption>Compras Esportivas</caption>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Preço</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tênis de Corrida</td>
+                    <td>R$ 799,00</td>
+                </tr>
+                <tr>
+                    <td>Chuteira</td>
+                    <td>R$ 559,99</td>
+                </tr>
+                <tr>
+                    <td>Óculos de Natação</td>
+                    <td>R$ 150,00</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total:</td>
+                    <td>R$ 1.508,99</td>
+                </tr>
+            </tfoot>
+        </table>
+        <p>Veja a aplicação das tags semanticas que utilizei para construir essa tabela:</p>
+        <figure>
+            <img src="src/semanticTableCodeExample.jpg" alt="Tabela com tags Semânticas">
+            <figcaption><em>Fig. 2 - Tabela com tags semânticas</em></figcaption>
+        </figure>
+        <p>Exatamente! Não há nenhuma diferença visual entre uma tabela com tags semânticas e outra sem, veja <em>Fig 2</em>. O código não altera em nada o desenho da tabela, poderia ter escrito sem utilizar essas tags, contudo, fiz propositalmmente para anunciar um tópico muito importante que veremos no futuro: as tags semânticas! No mundo dos programadores, onde por diversas vezes um código precisa ser revisto, consertado, alterado, etc. essas tags têm como finalidade facilitar a legibilidade do código entre os propensos editores.</p>
+        <p>Outra observação: embora tenha utilizado o atributo border para definir a espessura das linhas nesses exemplos, através do CSS podemos realizar toda a estilização das tabelas de maneira mais prática e funcional.</p>
+    </div>
+    <footer></footer>
+</body>
+</html>

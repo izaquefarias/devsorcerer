@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Forms</title>
+</head>
+<body>
+    <section>
+        <h1>Utilizando Forms</h1>
+        <p>Em linhas simples: forms ou formulários, são as caixinhas utilizadas pelas páginas da internet para capturar entrada de dados dos usuários. O famoso campo "digite seu usuário e senha" funciona através de um form, o cadastro de endereço para entrega de uma compra em uma loja virtual, os comentários em um blog, e até mesmo uma postagem nas redes sociais são criados através dos forms. Através deles submetemos informações que serão processadas ou armazenadas em um banco de dados.</p>
+        <h3>Construção</h3>
+        <p>Os formulários são construídos com as tags: <code class="codeTexts">&lt;form&gt;</code> e <code class="codeTexts">&lt;/form&gt;</code>, elas marcam o início e o fim do formulário, mas para que funcionem irão precisar indispensavelmente da tag <code class="codeTexts">&lt;input&gt;</code> que através do seu atributo <code class="codeTexts">type=""</code> irá definir o tipo de entrada de dados a serem processados em uma aplicação e/ou registrados em um servidor. Há diversos tipos de inputs quem podem ser aplicados para se obter informações específicas de um usuário, exemplo: um input específico para textos; outro para que quando o usuário digite uma senha e ela seja mascarada por pontinhos e não aparecça em tela, como dito anteriormente: a depender "do tipo de entrada" desses dados.</p>
+        <h3>Tag Text</h3>
+        <p>Esse formulário é um basicão da internet, seu imnput do tipo <code class="codeTexts">text</code> tem diversas utilidades.</p> 
+        <h4>Passo a Passo</h4>
+        <p>Após tags gerais de abertura: <code class="codeTexts">&lt;form&gt;</code> e <code class="codeTexts">&lt;/form&gt;</code>, a primeira tag a ser inciada será a <code class="codeTexts">&lt;label&gt;</code> e <code class="codeTexts">&lt;/label&gt;</code> que nada mais é do que um texto associado ao input, irá "solicitar" o usuário a informação específica, instrui o dado a ser preenchido, o texto do label fica entre suas duas tags. Importante definir também no label o atributo <code class="codeTexts">for=""</code> que direciona para o campo que possuir esse id, resumindo: <em>o for="" do label direciona para o id="" do campo a ser preenchido</em>. Em seguida iremos inserir a famosa tag <code class="codeTexts">&lt;input&gt;</code> configurando seu atributo do tipo <code class="codeTexts">text</code>, colocando o id para ligar ao label e definindo um <code class="codeTexts">name=""</code> que será o parâmetro de destino.</p>
+        <p>O código ficará da seguinte maneira:</p>
+        <ul>
+            <li><figure>
+                <img src="src/textFormExample.jpg" alt="Código de formulário do tipo texto">
+                <figcaption>Fig. 1 - Código de Formulário Do Tipo Texto.</figcaption>
+            </figure></li>
+        </ul>
+        <p>Se o usuário clicar exatamente no texto associado ao label, através da fórmulada casada for="" -> id="", o cursor será direcionado para dentro do forumlário. </p>
+        <p>O resultado a ser exibido no navegador:</p>
+        <ul>
+            <li><figure>
+                <img src="src/textFormExample2.jpg" alt="Saída do form">
+                <figcaption>Fig. 2 - Saída do formulário.</figcaption>
+            </figure></li>
+        </ul>
+        <h3>Placeholder e Submit</h3>
+        <p>O <code class="codeTexts">placeholder=""</code> é uma descrição interna que aparece no formulário com o objetivo de "oirentar" o usuário sobre o tipo de entrada que está sendo pedido, serve como uma "sugestão" de entrada. E o input do tipo <code class="codeTexts">submit</code> vai gerar o botão que ao ser apertado irá capturar a entrada digitada no furmulário, no atributo <code class="codeTexts">value=""</code> define o texto dentro do botão.</p>
+        <ul>
+            <li><figure>
+                <img src="src/formCompraExample.jpg" alt="Código de um Formulário de Pesquisa">
+                <figcaption>Fig. 3 - Código de um formulário completo.</figcaption>
+            </figure></li>
+        </ul>
+        <p>O resultado do código acima:</p>
+        <ul>
+            <li>
+                <figure>
+                    <img src="src/formCompraWeb.jpg" alt="Saída do Formulário de Pesquisa">
+                    <figcaption>Fig. 4 - Saída do Formulário de Pesquisa.</figcaption>
+                </figure>
+            </li>
+        </ul>
+        <p>Existem diversos tipos formulários que podem ser aplicados em contextos específicos. Irei abrir um capítulo expandido explorando esses diversos tipos.</p>
+    </section>
+</body>
+</html>

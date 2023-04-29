@@ -1,0 +1,40 @@
+ <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estrutura.css">
+    <title>Estrutura Básica html</title>
+</head>
+<body>
+    <header></header>    
+    <section>
+        <div id="mainArticle">
+            <h1 id="mainTitle">A Estrutura Básica de Uma Página Web</h1>
+            <p> O html é parte do tripé que compões aplicações ou páginas web (html, javascript e CSS), não se trata necessariamente de uma linguagem de programação, a sigla significa "Liguagem de Marcação de Hipertexto". Podemos apelidar a estrutura html de "esqueleto" da página web, seu objetivo é "organizar" o conteúdo escrito através de tags que darão forma visual aos dados ao mesmo tempo em que dará sustentação ao conteúdo e acesso os outros elementos, por exemplo: os arquivos javscript e CSS.</p>
+            <figure>
+                <img src="src/htmlBasicStrutcture.jpg" alt="Modelo Básico de HTML">
+                <figcaption><em>Fig. 1- Exemplo de Estrutura Básica html.</em></figcaption>
+            </figure>
+           <p>Como pode ser visto na imagem que serviu de exemplo anteriormente, o html é construído com "códigos" chamados de "tags" (essa expressão vai se tornar recorrente se você pretende trabalhar com desenvolvimento web), essas tags são comuns a todas as páginas html, elas vão se repetir adquirindo funções específicas conforme a necessidade, pois irão interagir com os navegadores de forma a organizar textos digitados, exibir imagens, vincular formulários, executar scripts, um universo de itens pode ser associados de maneira genérica, as tags serão o ponto central desse assunto, pois para iniciar uma ação teremos de envocar uma tag.</p>
+           <h3>Anatomia do html</h3>
+           <p>Observe no início da página a tag: <strong>&lt;!DOCTYPE html&gt;</strong> <em>Fig. 1 - linha 1</em>, é o início do documento e indica ser da versão a ser utilizada pelo browser: html5, a mais recente. Pode parecer difícil de observar a primeira vista, mas utilize as linhas numeradas para enxergar o começo propriamente dito na mesma imagem de exemplo <em>linha 2</em> <strong>&lt;html&gt;</strong> a abertura e o fechamentona <em>linha 12</em> <strong>&lt;/html&gt;</strong>, é o conteúdo propriamente dito da página, vamos dividí-lo em duas partes e falar brevemente sobre suas funções: <strong>header</strong> e <strong>footer</strong>.</p>
+           <h3>Head</h3>
+           <p>O head pode ser entendido como "cabeçalho" da página, começa pela tag <strong>&lt;head&gt;</strong> <em>Fig. 1 - linha 3</em> e termina na <em>linha 8</em> <strong>&lt;/head&gt;</strong>, contém diversos elementos não expresos diretamente no texto a ser exibido, trabalham por debaixo dos panos por assim dizer. Exemplos: os metadados são expressos através das tags <strong>&lt;meta&gt;</strong> que transferem informações da página aos navegadores e mecanismos de busca, o título da página <strong>&lt; title&gt;</strong>Título da Página<strong>&lt;/title &gt;</strong> e também links para para scripts (Js) e folhas de estilo (CSS).</p>
+           <figure>
+            <img src="src/headExample.jpg" alt="Exemplo de Head html">
+            <figcaption><em>Fig. 2 - Exemplo de head html.</em></figcaption>
+           </figure>
+           <h3>Body</h3>
+           <p>O body é literalmente traduzido do inglês como "o corpo" da html, contido entre as tags: <strong>&lt;body&gt;</strong> e <strong>&lt;/body&gt;</strong> na <em>Fig.1 linha 9</em> e na <em>linha 10</em>, que terão o texto a ser lido, imagens, tabelas, vídeos etc. É interessante notar que o que aparece no browser quando estamos vendo uma página web não exibe diretamente a estrutura que digitamos no arquivo html, parte do conteúdo é oculto, isso porque muitas tags tem funções para separar o texto, ou aplicar uma estilização dispensando nesse caso o uso do CSS. Veja a seguir o exemplo dessa prórpria página escrita no html.</p>
+           <figure>
+            <img src="src/htmlExample.jpg" alt="Amostra de html da Página">
+            <figcaption><em>Fig. 3 - Amostra de html da Página.</em></figcaption>
+            <p> É interessante salientar: a imagem não está exibindo o conteúdo completo da página, e que há diversas tags repetidas desempenhando funções distintas.</p>
+           </figure>
+        </div>
+    </section>
+    <footer></footer>
+</body>
+</html>
